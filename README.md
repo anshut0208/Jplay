@@ -1,16 +1,16 @@
-## Hi there 👋
+# Offline Chat-Reply Recommendation System
 
-<!--
-**anshut0208/anshut0208** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Description
+Predicts User A's reply in two-person conversations using GPT-2 transformer.
 
-Here are some ideas to get you started:
+## Folder Structure
+- `dataset/` → Contains user chat CSV files.
+- `model/` → Fine-tuned GPT-2 model will be saved here.
+- `ChatRec_Model.ipynb` → Jupyter notebook with preprocessing, training, evaluation, and reply generation.
+- `utils.py` → Helper functions for preprocessing.
+- `generate_reply.py` → Script to generate replies offline.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## How to Run
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run `ChatRec_Model.ipynb` to preprocess and train GPT-2 offline.
+3. Run `generate_reply.py` to generate replies using trained model.
